@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author vdmoiList<List<Integer>>
+ * список всех сочитаний из n по k
+ * @author vdmoiList
  */
 public class Combinations {
     public Combinations(){
@@ -41,6 +41,7 @@ public class Combinations {
         }
         return rez;
     }
+    
     public int factorial(int n){
         int rez = 1;
         for (int i = 1; i<=n; i++){
@@ -48,9 +49,20 @@ public class Combinations {
         }
         return rez;
     }
+    
+    /**
+     * количество сочетаний длиной k из n элементов
+     * @param n
+     * @param k
+     * @return 
+     */
+    public int combinationsCalculate(int n, int k){
+        return factorial(n)/(factorial(k)*factorial(n-k));
+    }
+    
     public List<List<Integer>> combine(int n, int k){
         List rez = new ArrayList<List<Integer>>();
-        int quant = factorial(n)/factorial(k)/factorial(n-k);
+        int quant = combinationsCalculate(n, k);
         System.out.println(quant);
         return rez;
     }
