@@ -7,7 +7,7 @@ package leetcode;
 
 public class Main {
     public static void main(String[] args) {
-        RemoveElement rez = new RemoveElement();
+        RotateArray rez = new RotateArray();
         
     }
     

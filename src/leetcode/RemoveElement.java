@@ -29,11 +29,6 @@ public class RemoveElement {
                 nums[nums.length-count] = val;
             }
         }
-//        count = 0;
-//        for(int i = nums.length-1; i>=0; i--){
-//            if(nums[i] == val)count++;
-//            else break;
-//        }
         return nums.length - count;
     }
 }
