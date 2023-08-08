@@ -7,7 +7,7 @@ package leetcode;
 
 public class Main {
     public static void main(String[] args) {
-        HIndex rez = new HIndex();
+        GasStation rez = new GasStation();
         
     }
     
